@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		D41617AC20928E41002CF2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41617AB20928E41002CF2E3 /* AppDelegate.swift */; };
-		D41617AE20928E41002CF2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41617AD20928E41002CF2E3 /* ViewController.swift */; };
-		D41617B120928E41002CF2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41617AF20928E41002CF2E3 /* Main.storyboard */; };
 		D41617B320928E43002CF2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41617B220928E43002CF2E3 /* Assets.xcassets */; };
 		D41617B620928E43002CF2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41617B420928E43002CF2E3 /* LaunchScreen.storyboard */; };
+		D41617BF20928F94002CF2E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41617BE20928F94002CF2E3 /* MainViewController.swift */; };
+		D47DB4732093D4930022495E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB4722093D4930022495E /* LoginViewController.swift */; };
+		D47DB4762093D7E40022495E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB4752093D7E40022495E /* RegistrationViewController.swift */; };
+		D47DB4792093DFC60022495E /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB4782093DFC60022495E /* UIColor+Hex.swift */; };
+		D47DB47C2094DF4C0022495E /* TopicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB47B2094DF4C0022495E /* TopicListViewController.swift */; };
+		D47DB47E2094E1F40022495E /* RandomEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB47D2094E1F40022495E /* RandomEntriesViewController.swift */; };
+		D47DB4802094E2070022495E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB47F2094E2070022495E /* SearchViewController.swift */; };
+		D47DB4822094E2120022495E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB4812094E2120022495E /* ProfileViewController.swift */; };
+		D47DB484209501750022495E /* icons in Resources */ = {isa = PBXBuildFile; fileRef = D47DB483209501750022495E /* icons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D41617A820928E41002CF2E3 /* sozluk_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sozluk_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41617AB20928E41002CF2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D41617AD20928E41002CF2E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D41617B020928E41002CF2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D41617B220928E43002CF2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D41617B520928E43002CF2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D41617B720928E43002CF2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41617BE20928F94002CF2E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D47DB4722093D4930022495E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D47DB4752093D7E40022495E /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		D47DB4782093DFC60022495E /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		D47DB47B2094DF4C0022495E /* TopicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListViewController.swift; sourceTree = "<group>"; };
+		D47DB47D2094E1F40022495E /* RandomEntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEntriesViewController.swift; sourceTree = "<group>"; };
+		D47DB47F2094E2070022495E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D47DB4812094E2120022495E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D47DB483209501750022495E /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,85 @@
 		D41617AA20928E41002CF2E3 /* sozluk_ios */ = {
 			isa = PBXGroup;
 			children = (
+				D47DB483209501750022495E /* icons */,
+				D47DB4772093DA7B0022495E /* Extentions */,
+				D47DB4712093D4160022495E /* Views */,
+				D47DB4702093D40E0022495E /* View Controllers */,
+				D47DB46F2093D3FA0022495E /* Models */,
+				D47DB46E2093D3EF0022495E /* View Models */,
+				D41617BD20928EAC002CF2E3 /* Supporting Files */,
+				D41617B720928E43002CF2E3 /* Info.plist */,
 				D41617AB20928E41002CF2E3 /* AppDelegate.swift */,
-				D41617AD20928E41002CF2E3 /* ViewController.swift */,
-				D41617AF20928E41002CF2E3 /* Main.storyboard */,
+				D41617BE20928F94002CF2E3 /* MainViewController.swift */,
 				D41617B220928E43002CF2E3 /* Assets.xcassets */,
 				D41617B420928E43002CF2E3 /* LaunchScreen.storyboard */,
-				D41617B720928E43002CF2E3 /* Info.plist */,
 			);
 			path = sozluk_ios;
+			sourceTree = "<group>";
+		};
+		D41617BD20928EAC002CF2E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D47DB46E2093D3EF0022495E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		D47DB46F2093D3FA0022495E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D47DB4702093D40E0022495E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D47DB47A2094DF0F0022495E /* TabBarControllers */,
+				D47DB4742093D4AD0022495E /* UserControllers */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D47DB4712093D4160022495E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D47DB4742093D4AD0022495E /* UserControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D47DB4722093D4930022495E /* LoginViewController.swift */,
+				D47DB4752093D7E40022495E /* RegistrationViewController.swift */,
+			);
+			path = UserControllers;
+			sourceTree = "<group>";
+		};
+		D47DB4772093DA7B0022495E /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				D47DB4782093DFC60022495E /* UIColor+Hex.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		D47DB47A2094DF0F0022495E /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D47DB47B2094DF4C0022495E /* TopicListViewController.swift */,
+				D47DB47D2094E1F40022495E /* RandomEntriesViewController.swift */,
+				D47DB47F2094E2070022495E /* SearchViewController.swift */,
+				D47DB4812094E2120022495E /* ProfileViewController.swift */,
+			);
+			path = TabBarControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +207,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47DB484209501750022495E /* icons in Resources */,
 				D41617B620928E43002CF2E3 /* LaunchScreen.storyboard in Resources */,
 				D41617B320928E43002CF2E3 /* Assets.xcassets in Resources */,
-				D41617B120928E41002CF2E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +220,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D41617AE20928E41002CF2E3 /* ViewController.swift in Sources */,
+				D47DB4732093D4930022495E /* LoginViewController.swift in Sources */,
+				D47DB47E2094E1F40022495E /* RandomEntriesViewController.swift in Sources */,
+				D47DB4802094E2070022495E /* SearchViewController.swift in Sources */,
 				D41617AC20928E41002CF2E3 /* AppDelegate.swift in Sources */,
+				D47DB47C2094DF4C0022495E /* TopicListViewController.swift in Sources */,
+				D47DB4762093D7E40022495E /* RegistrationViewController.swift in Sources */,
+				D47DB4822094E2120022495E /* ProfileViewController.swift in Sources */,
+				D41617BF20928F94002CF2E3 /* MainViewController.swift in Sources */,
+				D47DB4792093DFC60022495E /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D41617AF20928E41002CF2E3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D41617B020928E41002CF2E3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D41617B420928E43002CF2E3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,7 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sausozluk.sozluk-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sausozluk.sozluk-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
