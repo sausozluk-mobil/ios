@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90F34EC0C4784988EC4AF5AA /* Pods_sozluk_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A36619C21681BD521075EF /* Pods_sozluk_ios.framework */; };
 		D41617AC20928E41002CF2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41617AB20928E41002CF2E3 /* AppDelegate.swift */; };
 		D41617B320928E43002CF2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41617B220928E43002CF2E3 /* Assets.xcassets */; };
 		D41617B620928E43002CF2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41617B420928E43002CF2E3 /* LaunchScreen.storyboard */; };
@@ -19,9 +20,14 @@
 		D47DB4802094E2070022495E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB47F2094E2070022495E /* SearchViewController.swift */; };
 		D47DB4822094E2120022495E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB4812094E2120022495E /* ProfileViewController.swift */; };
 		D47DB484209501750022495E /* icons in Resources */ = {isa = PBXBuildFile; fileRef = D47DB483209501750022495E /* icons */; };
+		D48EAE9220951B7200AC94CA /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EAE9020951B7100AC94CA /* SimpleTableViewCell.swift */; };
+		D48EAE9320951B7200AC94CA /* SimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D48EAE9120951B7100AC94CA /* SimpleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29A36619C21681BD521075EF /* Pods_sozluk_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sozluk_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E5104CBFE86BD9837B5B73D /* Pods-sozluk_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sozluk_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sozluk_ios/Pods-sozluk_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		BCFE021C6229348155359B16 /* Pods-sozluk_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sozluk_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-sozluk_ios/Pods-sozluk_ios.release.xcconfig"; sourceTree = "<group>"; };
 		D41617A820928E41002CF2E3 /* sozluk_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sozluk_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41617AB20928E41002CF2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D41617B220928E43002CF2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		D47DB47F2094E2070022495E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D47DB4812094E2120022495E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D47DB483209501750022495E /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
+		D48EAE9020951B7100AC94CA /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
+		D48EAE9120951B7100AC94CA /* SimpleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F34EC0C4784988EC4AF5AA /* Pods_sozluk_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31442062051C88C8D2E8DFD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29A36619C21681BD521075EF /* Pods_sozluk_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C85E54FBE5AF63A31790B1C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E5104CBFE86BD9837B5B73D /* Pods-sozluk_ios.debug.xcconfig */,
+				BCFE021C6229348155359B16 /* Pods-sozluk_ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D416179F20928E40002CF2E3 = {
 			isa = PBXGroup;
 			children = (
 				D41617AA20928E41002CF2E3 /* sozluk_ios */,
 				D41617A920928E41002CF2E3 /* Products */,
+				C85E54FBE5AF63A31790B1C8 /* Pods */,
+				31442062051C88C8D2E8DFD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +122,8 @@
 		D47DB46E2093D3EF0022495E /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				D48EAE9020951B7100AC94CA /* SimpleTableViewCell.swift */,
+				D48EAE9120951B7100AC94CA /* SimpleTableViewCell.xib */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -156,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D41617BA20928E43002CF2E3 /* Build configuration list for PBXNativeTarget "sozluk_ios" */;
 			buildPhases = (
+				D79FF16582CFFD7FDB4715B2 /* [CP] Check Pods Manifest.lock */,
 				D41617A420928E41002CF2E3 /* Sources */,
 				D41617A520928E41002CF2E3 /* Frameworks */,
 				D41617A620928E41002CF2E3 /* Resources */,
+				4C84C403A782A5A6910CE027 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,12 +240,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				D47DB484209501750022495E /* icons in Resources */,
+				D48EAE9320951B7200AC94CA /* SimpleTableViewCell.xib in Resources */,
 				D41617B620928E43002CF2E3 /* LaunchScreen.storyboard in Resources */,
 				D41617B320928E43002CF2E3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C84C403A782A5A6910CE027 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-sozluk_ios/Pods-sozluk_ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sozluk_ios/Pods-sozluk_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D79FF16582CFFD7FDB4715B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sozluk_ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D41617A420928E41002CF2E3 /* Sources */ = {
@@ -223,6 +295,7 @@
 				D47DB4732093D4930022495E /* LoginViewController.swift in Sources */,
 				D47DB47E2094E1F40022495E /* RandomEntriesViewController.swift in Sources */,
 				D47DB4802094E2070022495E /* SearchViewController.swift in Sources */,
+				D48EAE9220951B7200AC94CA /* SimpleTableViewCell.swift in Sources */,
 				D41617AC20928E41002CF2E3 /* AppDelegate.swift in Sources */,
 				D47DB47C2094DF4C0022495E /* TopicListViewController.swift in Sources */,
 				D47DB4762093D7E40022495E /* RegistrationViewController.swift in Sources */,
@@ -362,8 +435,10 @@
 		};
 		D41617BB20928E43002CF2E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E5104CBFE86BD9837B5B73D /* Pods-sozluk_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5YZKWJTAK;
 				INFOPLIST_FILE = sozluk_ios/Info.plist;
@@ -380,8 +455,10 @@
 		};
 		D41617BC20928E43002CF2E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCFE021C6229348155359B16 /* Pods-sozluk_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5YZKWJTAK;
 				INFOPLIST_FILE = sozluk_ios/Info.plist;
