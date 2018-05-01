@@ -13,7 +13,12 @@ class RandomEntriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: UIViewController.getScreenSize().width, height: 44))
+        self.view.addSubview(navBar);
+        let navItem = UINavigationItem(title: "SomeTitle");
+        let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: nil, action: "selector");
+        navItem.rightBarButtonItem = doneItem;
+        navBar.setItems([navItem], animated: false);
     }
 
     override func didReceiveMemoryWarning() {

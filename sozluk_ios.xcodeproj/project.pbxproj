@@ -12,6 +12,7 @@
 		D41617B320928E43002CF2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41617B220928E43002CF2E3 /* Assets.xcassets */; };
 		D41617B620928E43002CF2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41617B420928E43002CF2E3 /* LaunchScreen.storyboard */; };
 		D41617BF20928F94002CF2E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41617BE20928F94002CF2E3 /* MainViewController.swift */; };
+		D4175DEA20989401006FE44D /* UIViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4175DE920989401006FE44D /* UIViewContoller.swift */; };
 		D47DB4732093D4930022495E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB4722093D4930022495E /* LoginViewController.swift */; };
 		D47DB4762093D7E40022495E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB4752093D7E40022495E /* RegistrationViewController.swift */; };
 		D47DB4792093DFC60022495E /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB4782093DFC60022495E /* UIColor+Hex.swift */; };
@@ -20,6 +21,9 @@
 		D47DB4802094E2070022495E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB47F2094E2070022495E /* SearchViewController.swift */; };
 		D47DB4822094E2120022495E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47DB4812094E2120022495E /* ProfileViewController.swift */; };
 		D47DB484209501750022495E /* icons in Resources */ = {isa = PBXBuildFile; fileRef = D47DB483209501750022495E /* icons */; };
+		D480A963209663F100D2442C /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480A962209663F100D2442C /* NetworkLayer.swift */; };
+		D480A965209666B800D2442C /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480A964209666B800D2442C /* TopicModel.swift */; };
+		D480A967209675ED00D2442C /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480A966209675ED00D2442C /* NetworkAdapter.swift */; };
 		D48EAE9220951B7200AC94CA /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EAE9020951B7100AC94CA /* SimpleTableViewCell.swift */; };
 		D48EAE9320951B7200AC94CA /* SimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D48EAE9120951B7100AC94CA /* SimpleTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -34,6 +38,7 @@
 		D41617B520928E43002CF2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D41617B720928E43002CF2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D41617BE20928F94002CF2E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D4175DE920989401006FE44D /* UIViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewContoller.swift; sourceTree = "<group>"; };
 		D47DB4722093D4930022495E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D47DB4752093D7E40022495E /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		D47DB4782093DFC60022495E /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
@@ -42,6 +47,9 @@
 		D47DB47F2094E2070022495E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D47DB4812094E2120022495E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D47DB483209501750022495E /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
+		D480A962209663F100D2442C /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		D480A964209666B800D2442C /* TopicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
+		D480A966209675ED00D2442C /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
 		D48EAE9020951B7100AC94CA /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
 		D48EAE9120951B7100AC94CA /* SimpleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +104,7 @@
 		D41617AA20928E41002CF2E3 /* sozluk_ios */ = {
 			isa = PBXGroup;
 			children = (
+				D480A9612096630A00D2442C /* Network */,
 				D47DB483209501750022495E /* icons */,
 				D47DB4772093DA7B0022495E /* Extentions */,
 				D47DB4712093D4160022495E /* Views */,
@@ -131,6 +140,7 @@
 		D47DB46F2093D3FA0022495E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D480A964209666B800D2442C /* TopicModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				D47DB4782093DFC60022495E /* UIColor+Hex.swift */,
+				D4175DE920989401006FE44D /* UIViewContoller.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -177,6 +188,15 @@
 				D47DB4812094E2120022495E /* ProfileViewController.swift */,
 			);
 			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		D480A9612096630A00D2442C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D480A962209663F100D2442C /* NetworkLayer.swift */,
+				D480A966209675ED00D2442C /* NetworkAdapter.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,10 +277,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-sozluk_ios/Pods-sozluk_ios-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -295,13 +323,17 @@
 				D47DB4732093D4930022495E /* LoginViewController.swift in Sources */,
 				D47DB47E2094E1F40022495E /* RandomEntriesViewController.swift in Sources */,
 				D47DB4802094E2070022495E /* SearchViewController.swift in Sources */,
+				D480A967209675ED00D2442C /* NetworkAdapter.swift in Sources */,
 				D48EAE9220951B7200AC94CA /* SimpleTableViewCell.swift in Sources */,
+				D4175DEA20989401006FE44D /* UIViewContoller.swift in Sources */,
 				D41617AC20928E41002CF2E3 /* AppDelegate.swift in Sources */,
+				D480A963209663F100D2442C /* NetworkLayer.swift in Sources */,
 				D47DB47C2094DF4C0022495E /* TopicListViewController.swift in Sources */,
 				D47DB4762093D7E40022495E /* RegistrationViewController.swift in Sources */,
 				D47DB4822094E2120022495E /* ProfileViewController.swift in Sources */,
 				D41617BF20928F94002CF2E3 /* MainViewController.swift in Sources */,
 				D47DB4792093DFC60022495E /* UIColor+Hex.swift in Sources */,
+				D480A965209666B800D2442C /* TopicModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

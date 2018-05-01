@@ -21,13 +21,14 @@ class MainViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
         self.tabBar.barTintColor = UIColor(red: (36 / 255.0), green: (27 / 255.0), blue: (112 / 255.0), alpha: 100)
         self.tabBar.tintColor = UIColor.white
         self.createTabViewController(names: ["Ortaya Karışık", "Bugün", "Ara", "Profil"], backgroundColor: .white)
         print(tabBarViews.count)
-        print("tabBar çalıştı")
         self.viewControllers = self.tabBarViews
         
     }
