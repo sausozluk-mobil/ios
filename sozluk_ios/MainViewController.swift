@@ -13,10 +13,10 @@ class MainViewController: UITabBarController {
     var tabBarViews: [UIViewController] = []
     
     enum TabBarViewControllers: String {
-        case shuffle = "Ortaya Karışık"
-        case today = "Bugün"
-        case search = "Ara"
-        case profile = "Profil"
+        case shuffle = "ortaya karışık"
+        case today = "bugün"
+        case search = "ara"
+        case profile = "profil"
     }
     
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class MainViewController: UITabBarController {
         // Do any additional setup after loading the view.
         self.tabBar.barTintColor = UIColor(red: (36 / 255.0), green: (27 / 255.0), blue: (112 / 255.0), alpha: 100)
         self.tabBar.tintColor = UIColor.white
-        self.createTabViewController(names: ["Ortaya Karışık", "Bugün", "Ara", "Profil"], backgroundColor: .white)
+        self.createTabViewController(names: ["ortaya karışık", "bugün", "ara", "profil"], backgroundColor: .white)
         print(tabBarViews.count)
         self.viewControllers = self.tabBarViews
         

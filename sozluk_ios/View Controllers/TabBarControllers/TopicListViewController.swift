@@ -13,8 +13,9 @@ import Moya_ObjectMapper
 
 class TopicListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let navigationBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: UIViewController.getScreenSize().width, height: 54))
-    let topicListView: UITableView = UITableView(frame: CGRect(x: 0, y: 74, width: UIViewController.getScreenSize().width, height: UIViewController.getScreenSize().height), style: .plain)
+    var headerView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: UIViewController.getScreenSize().width, height: 80))
+    var headerLabel: UILabel = UILabel(frame: CGRect(x: 10, y: 15, width: UIViewController.getScreenSize().width * 0.6, height: 50))
+    let topicListView: UITableView = UITableView(frame: CGRect(x: 0, y: 20, width: UIViewController.getScreenSize().width, height: UIViewController.getScreenSize().height), style: .plain)
     
     var titleCount: Int = 0
     var mainTopics = [Topic]()
@@ -23,7 +24,7 @@ class TopicListViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         
         setTableView()
-        setNavigationBar()
+        setTableHeaderView()
         
     }
     
@@ -85,28 +86,25 @@ class TopicListViewController: UIViewController, UITableViewDelegate, UITableVie
         return 50
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return headerView
+    }
+    
     // MARK: - PUBLIC FUNCTIONS
     
     func setTableView() {
         topicListView.delegate = self
         topicListView.dataSource = self
         topicListView.register(SimpleTableViewCell.self, forCellReuseIdentifier: "simpleCell")
+        self.topicListView.sectionHeaderHeight = 80
     }
     
-    func setNavigationBar() {
-        self.navigationBar.layer.opacity = 0.8
-        self.navigationBar.barTintColor = UIColor.white
-        self.navigationBar.isTranslucent = false
-        
-        self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationBar.shadowImage = UIColor.red.as1ptImage()
-        
-        self.view.addSubview(self.navigationBar);
-        
-        let navItem = UINavigationItem(title: "SomeTitle");
-        let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: nil, action: #selector(getter: UIAccessibilityCustomAction.selector));
-        navItem.rightBarButtonItem = doneItem;
-        self.navigationBar.setItems([navItem], animated: false);
+    func setTableHeaderView() {
+        headerView.backgroundColor = .white
+        self.headerLabel.text = "bugün"
+        self.headerLabel.font = UIFont(name: headerLabel.font.fontName, size: 40)
+        self.headerView.layer.opacity = 0.9
+        self.headerView.addSubview(headerLabel)
     }
     
     // MARK: - PRIVATE FUNCTIONS
